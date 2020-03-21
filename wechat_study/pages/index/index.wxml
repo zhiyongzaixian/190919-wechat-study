@@ -1,0 +1,5 @@
+<view class="indexContainer">
+  <image class="avatar" src='/static/images/nvsheng.jpg'></image>
+  <text class="userName">北方汉子</text>
+  <text class="hello">hello world</text>
+</view>

@@ -1,0 +1,27 @@
+
+
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f;
+  height: 100%;
+}
+
+
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: 100rpx 0;
+}
+
+.userName {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.hello {
+  font-size: 36rpx;
+  margin-top: 300rpx;
+}
