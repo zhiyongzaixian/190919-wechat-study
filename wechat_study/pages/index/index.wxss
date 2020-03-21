@@ -6,6 +6,10 @@
   height: 100%;
 }
 
+button {
+  margin-top: 100rpx;
+}
+
 
 .avatar {
   width: 200rpx;

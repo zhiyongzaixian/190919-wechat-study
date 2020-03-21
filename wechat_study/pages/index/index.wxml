@@ -1,5 +1,9 @@
 <view class="indexContainer" catchtap="handleParent">
-  <image class="avatar" src='/static/images/nvsheng.jpg'></image>
-  <text class="userName">{{msg}}</text>
+  <button wx:if='{{!userInfo.nickName}}' bindgetuserinfo='handleGetUserInfo' open-type="getUserInfo">获取用户信息</button>
+
+  <block wx:else>
+    <image bindtap="toLogs" class="avatar" src='{{userInfo.avatarUrl}}'></image>
+    <text  class="userName">{{userInfo.nickName}}</text>
+  </block>
   <text class="hello" catchtap="handleChild">hello world</text>
 </view>
