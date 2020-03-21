@@ -1,5 +1,5 @@
-<view class="indexContainer">
+<view class="indexContainer" catchtap="handleParent">
   <image class="avatar" src='/static/images/nvsheng.jpg'></image>
-  <text class="userName">北方汉子</text>
-  <text class="hello">hello world</text>
+  <text class="userName">{{msg}}</text>
+  <text class="hello" catchtap="handleChild">hello world</text>
 </view>
