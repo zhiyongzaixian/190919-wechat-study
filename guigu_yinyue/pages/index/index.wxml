@@ -7,17 +7,8 @@
       autoplay
       circular
   >
-    <swiper-item>
-      <image src="/static/images/nvsheng.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="/static/images/nvsheng.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="/static/images/nvsheng.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="/static/images/nvsheng.jpg"></image>
+    <swiper-item wx:for="{{bannersList}}" wx:key="{{index}}">
+      <image src="{{item.pic}}"></image>
     </swiper-item>
   </swiper>
 
