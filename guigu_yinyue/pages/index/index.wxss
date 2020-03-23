@@ -43,38 +43,14 @@
 .recommendContainer {
   padding: 40rpx 20rpx;
 }
-.header {
-  margin-bottom: 20rpx;
-}
 
-.header .title{
-  font-size: 26rpx;
-  color: #666;
-}
-
-.header .navContent {
-  height: 50rpx;
-  line-height: 50rpx;
-}
-
-.header .navContent .nav{
-  font-size: 30rpx;
-  color: #000;
-}
-
-.header .navContent .more {
-  float: right;
-  border: 1rpx solid #333;
-  font-size: 24rpx;
-  border-radius: 20rpx;
-  padding: 0 20rpx;
-}
 
 
 
 /* 滑动区域 scroll */
 .scrollBar {
   display: flex;
+  height: 300rpx;
 }
 
 .scrollBar .scrollItem {
@@ -102,10 +78,51 @@
 }
 
 
+/* 排行榜  */
+.topList {
+  padding: 0 20rpx;
+}
+
+.topList .title {
+  font-size: 28rpx;
+  line-height: 80rpx;
+}
+
+.topList .topListSwiper {
+  height: 460rpx;
+}
+
+.topList .swiperContent {
+  background: #fbfbfb;
+  width: 96%;
+  margin-right: 4%;
+}
+
+.topList .musicContent {
+  display: flex;
+  margin-top: 20rpx;
+
+}
+.topList .musicContent image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
 
 
 
+.topList .musicContent .count {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-weight: bold;
+}
 
+.topList .musicContent .musicName {
+  line-height: 100rpx;
+
+}
 
 
 
