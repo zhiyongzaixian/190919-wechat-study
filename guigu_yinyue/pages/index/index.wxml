@@ -56,34 +56,13 @@
 
     <!-- 列表内容 -->
     <swiper class="topListSwiper" next-margin="50rpx">
-      <swiper-item class="swiperItem">
+      <swiper-item class="swiperItem" wx:for="{{topList}}" wx:key="{{index}}">
         <view class="swiperContent">
-          <text class="title">云音乐新歌榜 > </text>
-          <view class="musicContent">
-            <image src="/static/images/nvsheng.jpg"></image>
-            <text class="count">1</text>
-            <text class="musicName">光辉岁月</text>
-          </view>
-          <view class="musicContent">
-            <image src="/static/images/nvsheng.jpg"></image>
-            <text class="count">1</text>
-            <text class="musicName">光辉岁月</text>
-          </view>
-          <view class="musicContent">
-            <image src="/static/images/nvsheng.jpg"></image>
-            <text class="count">1</text>
-            <text class="musicName">光辉岁月</text>
-          </view>
-        </view>
-      </swiper-item>
-
-      <swiper-item class="swiperItem">
-        <view class="swiperContent">
-          <text class="title">云音乐新歌榜 > </text>
-          <view class="musicContent">
-            <image src="/static/images/nvsheng.jpg"></image>
-            <text class="count">1</text>
-            <text class="musicName">光辉岁月</text>
+          <text class="title">{{item.name}} > </text>
+          <view class="musicContent" wx:for="{{item.tracks}}" wx:for-item="musicItem" wx:for-index="musicIndex" wx:key="{{musicIndex}}">
+            <image src="{{musicItem.al.picUrl}}"></image>
+            <text class="count">{{musicIndex + 1}}</text>
+            <text class="musicName">{{musicItem.name}}</text>
           </view>
         </view>
       </swiper-item>
