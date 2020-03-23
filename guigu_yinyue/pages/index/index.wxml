@@ -1,0 +1,23 @@
+<view class="indexContainer">
+  <swiper
+      class="navSwiper"
+      indicator-dots
+      indicator-active-color='#d43c33'
+      indicator-color='ivory'
+      autoplay
+      circular
+  >
+    <swiper-item>
+      <image src="/static/images/nvsheng.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/images/nvsheng.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/images/nvsheng.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/images/nvsheng.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>

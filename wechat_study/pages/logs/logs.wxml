@@ -1,2 +1,5 @@
 <!--pages/logs/logs.wxml-->
-<text>pages/logs/logs.wxml</text>
+<view>
+  <text>pages/logs/logs.wxml</text>
+  <text>{{msg}}</text>
+</view>
