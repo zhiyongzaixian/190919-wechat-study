@@ -47,25 +47,9 @@
     </view>
 
     <scroll-view class="scrollBar" enable-flex="true" scroll-x>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯喜欢我，我喜欢贾静雯贾静雯喜欢我，我喜欢贾静雯</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯喜欢我，我喜欢贾静雯</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯喜欢我，我喜欢贾静雯</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯喜欢我，我喜欢贾静雯</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯喜欢我，我喜欢贾静雯</text>
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="{{index}}">
+        <image src="{{item.picUrl}}"></image>
+        <text>{{item.name}}</text>
       </view>
     </scroll-view>
   </view>

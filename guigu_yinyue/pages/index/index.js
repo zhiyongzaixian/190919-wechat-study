@@ -1,4 +1,7 @@
 // pages/index/index.js
+
+import request from '../../utils/request'
+
 Page({
 
   /**
@@ -6,29 +9,25 @@ Page({
    */
   data: {
     bannersList: [], // 轮播图的数据
+    recommendList: [], // 推荐歌曲的数据
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: async function (options) {
     // 发送请求
-    wx.request({
-      url: 'http://localhost:3000/banner',
-      data: {
-        type: 2
-      },
-      success: (res) => {
-        console.log(res.data);
-        // 更新banner的数据
-        this.setData({
-          bannersList: res.data.banners
-        })
-      },
-      fail: (error) =>{
-        console.log(error);
-      }
-    });
+    let bannerListData = await request('/banner', {type: 2})
+    this.setData({
+      bannersList: bannerListData.banners
+    })
+    
+    // 获取推荐歌曲的数据
+    let recommendListData = await request('/personalized');
+    this.setData({
+      recommendList: recommendListData.result
+    })
+  
   },
 
   /**
