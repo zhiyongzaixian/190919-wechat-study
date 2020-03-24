@@ -58,7 +58,8 @@ Page({
       })
       
       // 2. 跳转至个人中心页
-      wx.redirectTo({
+      // redirectTo && navigateTo不能跳转至tabBar页面
+      wx.switchTab({
         url: '/pages/personal/personal'
       })
       

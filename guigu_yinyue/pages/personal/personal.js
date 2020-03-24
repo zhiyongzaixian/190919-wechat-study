@@ -1,5 +1,7 @@
 // pages/personal/personal.js
 
+import request from "../../utils/request";
+
 let startY = 0;  // 手指起始Y的坐标点
 let moveY = 0;  // 手指一动的Y的坐标点
 let moveDistance = 0;   // 手指一动的距离
@@ -9,19 +11,28 @@ Page({
   data: {
     coverTransform: 'translateY(0)',
     coverTransition: '0s',
-    userInfo: {}
+    userInfo: {},
+    recentPlayList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: async function (options) {
     // profile:nickName , avatarUrl
     // 1. 验证用户是否登录
     let userInfo = wx.getStorageSync('userInfo');
     if(userInfo){ // 用户登录
+      userInfo = JSON.parse(userInfo);
       this.setData({
-        userInfo: JSON.parse(userInfo)
+        userInfo
+      })
+      
+      console.log(userInfo);
+      // 发送请求获取用户最近播放记录
+      let recentPlayListData = await request('/user/record', {uid: userInfo.profile.userId, type: 0})
+      this.setData({
+        recentPlayList: recentPlayListData.allData
       })
     }
   },
