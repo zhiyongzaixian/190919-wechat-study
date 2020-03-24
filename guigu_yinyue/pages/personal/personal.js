@@ -8,14 +8,22 @@ let moveDistance = 0;   // 手指一动的距离
 Page({
   data: {
     coverTransform: 'translateY(0)',
-    coverTransition: '0s'
+    coverTransition: '0s',
+    userInfo: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // profile:nickName , avatarUrl
+    // 1. 验证用户是否登录
+    let userInfo = wx.getStorageSync('userInfo');
+    if(userInfo){ // 用户登录
+      this.setData({
+        userInfo: JSON.parse(userInfo)
+      })
+    }
   },
   
   handleTouchstart(event){
@@ -51,6 +59,18 @@ Page({
     })
   },
 
+  
+  //跳转至个人中心页
+  toLogin(){
+    console.log(this.data.userInfo.profile);
+    if(this.data.userInfo.profile){
+      return;
+    }
+  
+    wx.redirectTo({
+      url: '/pages/login/login'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

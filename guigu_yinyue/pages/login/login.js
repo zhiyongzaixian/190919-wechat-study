@@ -36,11 +36,40 @@ Page({
     // 2. 前端验证
     if(!phone || !password){
       console.log('用户名/密码错误');
+  
+      wx.showToast({
+        title: '登录失败',
+        icon: 'loading'
+      })
       return;
     }
     
     // 3. 发送请求进行后端验证
     let loginData = await request(`/login/cellphone`, {phone, password})
+    if(loginData.code === 200){
+      wx.showToast({
+        title: '登录成功',
+        icon: 'success'
+      })
+      // 1. 将用户登录成功的数据缓存至本地
+      wx.setStorage({
+        key: 'userInfo',
+        data: JSON.stringify(loginData)
+      })
+      
+      // 2. 跳转至个人中心页
+      wx.redirectTo({
+        url: '/pages/personal/personal'
+      })
+      
+      
+      
+    }else {
+      wx.showToast({
+        title: '登录失败',
+        icon: 'loading'
+      })
+    }
     console.log(loginData);
   },
   /**
