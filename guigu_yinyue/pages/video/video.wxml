@@ -1,2 +1,96 @@
-<!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view class="videoContainer">
+  <!-- 头部 -->
+  <view class="videoHeader">
+    <image src="/static/images/video/video.jpg" bindtap="chooseVideo"></image>
+    <view class="search">
+      <input type="text" placeholder="光辉岁月" placeholder-class="placeholder"/>
+    </view>
+    <image src="/static/images/logo.png"></image>
+  </view>
+
+
+  <!-- 导航区域 -->
+  <scroll-view class="videoNav" scroll-x>
+    <view class="navItem active">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+    <view class="navItem">
+      <view>
+        武汉加油
+      </view>
+    </view>
+
+  </scroll-view>
+</view>

@@ -7,6 +7,13 @@ Page({
   data: {
 
   },
+  
+  chooseVideo(){
+    // 打开本地摄像头
+    wx.chooseVideo({
+      maxDuration: 40, // 设置拍摄的最大时长， 最大的时间为60s
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
