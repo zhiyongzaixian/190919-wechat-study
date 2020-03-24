@@ -10,87 +10,25 @@
 
 
   <!-- 导航区域 -->
-  <scroll-view class="videoNav" scroll-x>
-    <view class="navItem active">
+  <scroll-view class="videoNav" scroll-x enable-flex>
+    <view
+        class="navItem {{navId === item.id?'active': ''}}"
+        wx:for="{{videoGroupList}}"
+        wx:key="{{index}}"
+        bindtap="changeNavId"
+        data-navId="{{item.id}}"
+    >
       <view>
-        武汉加油
+        {{item.name}}
       </view>
     </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
-    <view class="navItem">
-      <view>
-        武汉加油
-      </view>
-    </view>
+  </scroll-view>
 
+
+  <!-- 视频列表区域 -->
+  <scroll-view>
+    <view class="videoItem" wx:for="{{videoList}}" wx:key="{{index}}">
+      <video src="{{item.data.urlInfo.url}}"></video>
+    </view>
   </scroll-view>
 </view>

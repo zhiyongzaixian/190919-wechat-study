@@ -1,11 +1,15 @@
 // pages/video/video.js
+import request from "../../utils/request";
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    videoGroupList: [],
+    navId: 0, // 视频标签的id标识
+    videoList: [], // 视频列表数据
   },
   
   chooseVideo(){
@@ -14,12 +18,37 @@ Page({
       maxDuration: 40, // 设置拍摄的最大时长， 最大的时间为60s
     })
   },
+  
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: async function (options) {
+    // 获取视频导航标签列表数据
+    let videoGroupListData = await request('/video/group/list');
+    console.log(videoGroupListData);
+    this.setData({
+      videoGroupList: videoGroupListData.data.slice(0, 14),
+      navId: videoGroupListData.data[0].id
+    })
+    
+    
+    
+    // 获取对应标签下的视频列表数据
+    let videoListData = await request('/video/group', {id: this.data.navId});
+    console.log(videoListData);
+    this.setData({
+      videoList: videoListData.datas
+    })
+  },
+  
+  
+  changeNavId(event){
+    // console.log(event.currentTarget.dataset.navid);
+    this.setData({
+      navId: event.currentTarget.dataset.navid
+    })
   },
 
   /**

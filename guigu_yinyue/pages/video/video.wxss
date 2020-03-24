@@ -30,17 +30,30 @@
 
 
 /* video 导航区域 */
+/*.videoNav {*/
+  /*width: 100%;*/
+  /*white-space: nowrap;*/
+/*}*/
+
+
+/*.videoNav .navItem {*/
+  /*display: inline-block;*/
+  /*margin-left: 40rpx;*/
+/*}*/
+
 .videoNav {
-  width: 100%;
-  white-space: nowrap;
+  display: flex;
+  white-space: nowrap; /*必须要有当前的属性*/
+  height: 60rpx;
+  margin: 20rpx 0;
 }
 
 
 .videoNav .navItem {
-  display: inline-block;
-  margin-left: 40rpx;
+  /*width: 200rpx;*/
+  margin-left: 50rpx;
+  max-width: 200rpx; /*最大宽度*/
 }
-
 
 
 
@@ -53,5 +66,4 @@
 .videoNav .navItem>view {
   height: 40rpx;
   font-size: 32rpx;
-  padding: 10rpx;
 }

@@ -45,8 +45,10 @@ Page({
     }
     
     // 3. 发送请求进行后端验证
-    let loginData = await request(`/login/cellphone`, {phone, password})
+    let loginData = await request(`/login/cellphone`, {phone, password, isLogin: true})
     if(loginData.code === 200){
+      
+      console.log(loginData);
       wx.showToast({
         title: '登录成功',
         icon: 'success'
