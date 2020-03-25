@@ -1,0 +1,99 @@
+
+.songContainer {
+  height: 100%;
+  width: 100%;
+  background: #999;
+
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* 用户替代圆的底座*/
+.circle {
+  position: relative;
+  width: 60rpx;
+  height: 60rpx;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10rpx 0;
+  z-index: 100;
+
+}
+
+.needle {
+  position: relative;
+  z-index: 99;
+  left: 60rpx;
+  top: -40rpx;
+  width: 192rpx;
+  height: 274rpx;
+  /* 旋转rotate 位移translate 缩放scale*/
+  /*border: 1rpx solid;*/
+  transform-origin: 40rpx 0; /*设置旋转的基点*/
+  transform: rotate(-20deg);
+
+  /* 过渡： transition*/
+  transition: transform 1s;
+}
+
+
+.needleRotate {
+  transform: rotate(0deg);
+}
+
+.discContainer {
+  position: relative;
+  top: -170rpx;
+  width: 598rpx;
+  height: 598rpx;
+
+}
+
+.discContainer .disc {
+  width: 100%;
+  height: 100%;
+}
+
+
+.musicImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 370rpx;
+  height: 370rpx;
+  border-radius: 50%;
+}
+
+
+
+/* 底部控制播放区域 */
+.musicControl {
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  width: 100%;
+  border-top: 1rpx solid #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.musicControl text {
+  font-size: 50rpx;
+  color: #fff;
+  /*flex: 1;*/
+  height: 120rpx;
+  line-height: 120rpx;
+}
+
+
+.musicControl .big {
+  font-size: 80rpx;
+}

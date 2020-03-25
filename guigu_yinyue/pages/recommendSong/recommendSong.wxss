@@ -50,6 +50,10 @@
   color: #333;
 }
 
+.scrollView {
+  height: calc(100vh - 360rpx)
+}
+
 .scrollItem {
   position: relative;
   display: flex;

@@ -16,7 +16,7 @@
       <text class="changeMore">多选</text>
     </view>
 
-    <scroll-view class="scollView" scroll-y >
+    <scroll-view class="scrollView" scroll-y >
       <view class="scrollItem" wx:for="{{recommendList}}" wx:key="{{index}}">
         <image class="musicImg" src="{{item.album.picUrl}}"></image>
         <view class="musicContent">
