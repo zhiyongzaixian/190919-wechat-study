@@ -67,3 +67,68 @@
   height: 40rpx;
   font-size: 32rpx;
 }
+
+
+/*  视频列表样式 */
+
+.videoList {
+  height: calc(100vh - 160rpx)  /*vh vw 视口单位    1vh等于百分之一的视口高度*/
+}
+
+.videoList .videoItem {
+  padding: 0 3%;
+}
+.videoList video {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 10rpx;
+}
+
+
+.videoList .content {
+  font-size: 26rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* footer */
+.footer {
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 0;
+}
+.footer .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.footer  .nickName {
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+  float: right;
+}
+
+.comments_praised .btn {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+}
+.comments_praised .item {
+  margin-left: 50rpx;
+  position: relative;
+}
+
+.comments_praised .item .count {
+  position: absolute;
+  top: -20rpx;
+  font-size: 20rpx;
+}

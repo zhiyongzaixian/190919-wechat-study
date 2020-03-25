@@ -26,9 +26,39 @@
 
 
   <!-- 视频列表区域 -->
-  <scroll-view>
+  <scroll-view
+      class="videoList"
+      scroll-y
+      refresher-enabled
+      refresher-triggered="{{isTriggered}}"
+      refresher-background="#d43c33"
+      bindrefresherrefresh="handleRefresher"
+  >
     <view class="videoItem" wx:for="{{videoList}}" wx:key="{{index}}">
-      <video src="{{item.data.urlInfo.url}}"></video>
+      <video
+          src="{{item.data.urlInfo.url}}"
+          poster="{{item.data.coverUrl}}"
+      ></video>
+
+      <view class="content">{{item.data.title}}</view>
+
+      <view class="footer">
+        <image class="avatar" src="/static/images/nvsheng.jpg"></image>
+        <text class="nickName">贾静雯</text>
+        <view class="comments_praised">
+          <text class="item">
+            <text class="iconfont icon-buoumaotubiao15"></text>
+            <text class="count">300</text>
+          </text>
+          <text class="item">
+            <text class="iconfont icon-pinglun1"></text>
+            <text class="count">200</text>
+          </text>
+          <button open-type="share" class="item btn">
+            <text class="iconfont icon-gengduo"></text>
+          </button>
+        </view>
+      </view>
     </view>
   </scroll-view>
 </view>

@@ -9,7 +9,7 @@ export default (url, data={}, method='GET') => {
       method,
       header: {
         // 设置cookie  cookie必须是字符串，同时还的解析里边的数组
-        cookie: JSON.parse(wx.getStorageSync('cookies')).toString()
+        cookie: JSON.parse(wx.getStorageSync('cookies')  || "[]").toString()
       },
       success: (res) => {
         console.log(res);
