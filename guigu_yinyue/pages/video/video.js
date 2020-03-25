@@ -99,6 +99,20 @@ Page({
       isTriggered: false
     })
   },
+  
+  // 处理多个视频播放的问题
+  playControl(event){
+    console.log('play');
+    // 判断是否有视频在播放，如果有就stop, 注意： 如果是点击的暂停，要做判断处理，判断vid值
+    event.currentTarget.dataset.vid !== this.vid && this.videoContext && this.videoContext.stop();
+    this.vid = event.currentTarget.dataset.vid;
+    this.videoContext = wx.createVideoContext(this.vid);
+    // this.videoContext.play()
+    // setTimeout(() => {
+    //   // 停止视频
+    //   this.videoContext.stop();
+    // }, 2000)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

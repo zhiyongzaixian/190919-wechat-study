@@ -38,6 +38,9 @@
       <video
           src="{{item.data.urlInfo.url}}"
           poster="{{item.data.coverUrl}}"
+          id="{{item.data.vid}}"
+          bindplay="playControl"
+          data-vid="{{item.data.vid}}"
       ></video>
 
       <view class="content">{{item.data.title}}</view>
