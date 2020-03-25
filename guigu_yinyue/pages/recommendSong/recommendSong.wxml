@@ -17,7 +17,13 @@
     </view>
 
     <scroll-view class="scrollView" scroll-y >
-      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="{{index}}">
+      <view
+          class="scrollItem"
+          wx:for="{{recommendList}}"
+          wx:key="{{index}}"
+          bindtap="toSong"
+          data-song="{{item}}"
+      >
         <image class="musicImg" src="{{item.album.picUrl}}"></image>
         <view class="musicContent">
           <text class="musicName">{{item.name}}</text>

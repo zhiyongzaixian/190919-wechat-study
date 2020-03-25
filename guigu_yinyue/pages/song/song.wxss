@@ -53,6 +53,28 @@
 
 }
 
+
+/* 磁盘的动画 */
+.discRotate {
+  animation: disc 4s linear  infinite;
+  animation-delay: 1s;
+}
+
+/*
+  1. 一个完整的动画是由多帧组成的
+  2. animation帧数设置（@keyframes）方式：
+    1) from {} ---> to{} 动画只是平滑的多度，帧数较少的时候
+    2) 百分比  动画由多帧组成，且动画的运动曲线较为复杂的时候
+
+*/
+
+@keyframes disc {
+  /*from {transform-origin: rotate(0)}*/
+  from {}
+  to {transform: rotate(360deg)}
+}
+
+
 .discContainer .disc {
   width: 100%;
   height: 100%;

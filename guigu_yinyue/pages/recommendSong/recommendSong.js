@@ -47,6 +47,17 @@ Page({
     })
   },
 
+  
+  // 跳转至song页面
+  toSong(event){
+    // 获取到音乐对象信息
+    let song = event.currentTarget.dataset.song;
+    console.log(song, typeof song);
+    
+    wx.navigateTo({
+      url: '/pages/song/song?musicId=' + song.id
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
