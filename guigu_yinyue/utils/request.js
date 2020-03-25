@@ -12,10 +12,10 @@ export default (url, data={}, method='GET') => {
         cookie: JSON.parse(wx.getStorageSync('cookies')  || "[]").toString()
       },
       success: (res) => {
-        console.log(res);
+        // console.log(res);
         // 将登陆后获取的cookies存储到本地，便于之后发请求的时候获取到
         // 判断url
-        console.log(url);
+       // console.log(url);
         // 判断参数字段： isLogin 登陆成功
         if(data.isLogin){
           wx.setStorage({

@@ -7,4 +7,27 @@
       <text class="month">{{month}}</text>
     </view>
   </view>
+
+
+  <!-- 每日推荐歌曲列表 -->
+  <view class="recommendList">
+    <view class="listHeader">
+      <text>播放全部</text>
+      <text class="changeMore">多选</text>
+    </view>
+
+    <scroll-view class="scollView" scroll-y >
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="{{index}}">
+        <image class="musicImg" src="{{item.album.picUrl}}"></image>
+        <view class="musicContent">
+          <text class="musicName">{{item.name}}</text>
+          <text class="author">{{item.artists[0].name}} - {{item.album.name}}</text>
+        </view>
+        <view class="radio">
+          <text class="iconfont icon-gengduo"></text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
 </view>
