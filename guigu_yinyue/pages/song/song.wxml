@@ -10,7 +10,18 @@
     </view>
 
 
-
+    <!-- 进度条控制区域-->
+    <view class="audioControl">
+      <text>{{momentCurrentTime}}</text>
+      <view class="barControl">
+        <view class="audio-current-time" style="width: {{currentWidth + 'rpx'}}">
+          <view
+              class="audio-progress"
+          ></view>
+        </view>
+      </view>
+      <text>{{momentDurationTime}}</text>
+    </view>
 
     <!-- 底部控制播放区域 -->
     <view class="musicControl">

@@ -1,5 +1,8 @@
 // pages/song/song.js
 import PubSub from 'pubsub-js'
+import moment from 'moment'
+
+
 import request from "../../utils/request";
 
 // 获取全局app的实例
@@ -15,7 +18,10 @@ Page({
   data: {
     isPlay: false, // 标识音乐是否播放， 默认为未播放
     song: {},
-    musicId: 0
+    musicId: 0,
+    momentDurationTime: '00:00',
+    momentCurrentTime: '00:00',
+    currentWidth: 0,
   },
 
   /**
@@ -42,6 +48,20 @@ Page({
     }
     this.backgroundAudioManager = wx.getBackgroundAudioManager();
   
+    // 监听音乐播放进度
+    this.backgroundAudioManager.onTimeUpdate(() => {
+      // console.log('播放时长： ', this.backgroundAudioManager.currentTime); // 注意单位是s
+      let momentCurrentTime = moment(this.backgroundAudioManager.currentTime  * 1000).format('mm:ss');
+      
+      let currentWidth = this.backgroundAudioManager.currentTime / this.backgroundAudioManager.duration * 410;
+      
+      
+      this.setData({
+        momentCurrentTime,
+        currentWidth
+      })
+    })
+    
   
     // 监听音乐的播放/暂停/停止
     this.backgroundAudioManager.onPause(() => {
@@ -74,9 +94,18 @@ Page({
     // 获取音乐的详细信息
     let songData = await request('/song/detail', {ids: musicId});
     console.log(songData);
+    
+    // 处理音乐时长为： 00:00格式
+    let durationTime = songData.songs[0].dt;
+    let momentDurationTime = moment(durationTime).format('mm:ss');
+    // console.log('格式化之后的时间： ', momentDurationTime);
+    // console.log('duration: ', durationTime);
+    
+    
     this.setData({
       song: songData.songs[0],
-      musicId
+      musicId,
+      momentDurationTime
     })
     
     //  更新窗口的标题
@@ -129,7 +158,8 @@ Page({
       this.backgroundAudioManager.src = musicLink;
       this.backgroundAudioManager.title = this.data.song.name;
       
-      
+      // 首次通过currentTime获取的时间是undefined
+      // console.log('当前播放的时间： ', this.backgroundAudioManager.currentTime);
       // 声明音乐在播放
       this.isSwitch = false;
       
