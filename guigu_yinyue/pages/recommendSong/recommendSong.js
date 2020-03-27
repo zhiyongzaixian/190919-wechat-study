@@ -59,8 +59,18 @@ Page({
       console.log(msg, type);
       let {index, recommendList} = this.data;
       if(type === 'pre'){ // 上一首
+        // if(index === 0){
+        //   index = recommendList.length;
+        // }
+        //  预处理上边界问题
+        (index === 0) && (index = recommendList.length);
         index -=  1;
       }else { // 下一首
+        // if(index === recommendList.length - 1){
+        //   index = -1;
+        // }
+        //  预处理下边界问题
+        (index === recommendList.length - 1) && (index = -1);
         index += 1;
       }
       

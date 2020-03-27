@@ -85,6 +85,26 @@ Page({
     })
   
   
+    // 订阅消息获取对应的音乐id
+    // 放在onload中订阅解决订阅多次的问题
+    // PubSub.subscribe('musicId', async (msg, musicId) => {
+    //   console.log('recommend页面发送过来的音乐id: ', musicId);
+    //   // 获取音乐信息
+    //   // 获取音乐的详细信息
+    //   let songData = await request('/song/detail', {ids: musicId});
+    //   console.log(songData);
+    //   this.setData({
+    //     song: songData.songs[0],
+    //     musicId
+    //   })
+    //
+    //   //  更新窗口的标题
+    //   wx.setNavigationBarTitle({
+    //     title: this.data.song.name
+    //   })
+    //   // 播放音乐
+    //   this.musicControl(true, musicId);
+    // })
     
     
   },
@@ -110,6 +130,9 @@ Page({
       this.backgroundAudioManager.title = this.data.song.name;
       
       
+      // 声明音乐在播放
+      this.isSwitch = false;
+      
       // 修改全局的播放状态
       appInstance.globalData.musicId = musicId;
       appInstance.globalData.isMusicPlay = true;
@@ -129,8 +152,21 @@ Page({
   
   // 切换歌曲的事件回调
   switchSong(event){
+    // 判断音乐是否在正常播放
+    if(this.isSwitch){ // 正在切换
+      return
+    }
+    console.log('可以切换');
+    this.isSwitch = true;
+    
     let type = event.currentTarget.dataset.type;
     console.log(type);
+    // 关闭上一首音乐播放的状态
+    this.setData({
+      isPlay: false
+    })
+    // 停止音乐播放
+    this.backgroundAudioManager.stop();
     
     this.handleSwitchSong(type);
   },
@@ -154,8 +190,16 @@ Page({
         song: songData.songs[0],
         musicId
       })
+
+      //  更新窗口的标题
+      wx.setNavigationBarTitle({
+        title: this.data.song.name
+      })
       // 播放音乐
       this.musicControl(true, musicId);
+      
+      // 取消当前订阅
+      PubSub.unsubscribe('musicId');
     })
   },
   /**
