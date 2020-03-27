@@ -1,6 +1,11 @@
 // pages/song/song.js
 import request from "../../utils/request";
 
+// 获取全局app的实例
+let appInstance = getApp();
+console.log('全局实例： appInstance', appInstance.globalData);
+
+
 Page({
 
   /**
@@ -22,8 +27,20 @@ Page({
     // let song = JSON.parse(options.song);
     // options是收集路由参数的对象， 默认是空对象
     
+    
+    
     // 获取音乐id
     let musicId = options.musicId;
+  
+    // 判断 当前页面 音乐 是否在播放
+    if(appInstance.globalData.isMusicPlay && appInstance.globalData.musicId === musicId){
+      // 修改当前页面的播放状态
+      this.setData({
+        isPlay: true
+      })
+    }
+  
+  
     // 获取音乐的详细信息
     let songData = await request('/song/detail', {ids: musicId});
     console.log(songData);
@@ -49,6 +66,7 @@ Page({
   
   // 播放音乐播放/暂停功能
   async musicControl(isPlay, musicId){
+    
     if(isPlay){ // 播放
       
       // 通过音乐id获取对应的播放url地址
@@ -58,11 +76,20 @@ Page({
       // backgroundAudioManager.src = '音乐链接'
       this.backgroundAudioManager.src = musicLink;
       this.backgroundAudioManager.title = this.data.song.name;
+      
+      
+      // 修改全局的播放状态
+      appInstance.globalData.musicId = musicId;
+      appInstance.globalData.isMusicPlay = true;
+      
     }else { // 暂停
       this.backgroundAudioManager.pause();
+  
+  
+      // 修改全局的播放状态
+      // appInstance.globalData.musicId = musicId;
+      appInstance.globalData.isMusicPlay = false;
     }
-    
-    
     this.setData({
       isPlay
     })
