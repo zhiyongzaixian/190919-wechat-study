@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c59546c2-7211-432c-ab35-cbd9afa6867a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../guigu_yinyue.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../guigu_yinyue.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guigu_yinyue.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram_npm/pubsub-js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram_npm/pubsub-js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/song/song.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/song/song.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/song/song.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/song/song.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/song/song.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/song/song.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recommendSong/recommendSong.js" beforeDir="false" afterPath="$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recommendSong/recommendSong.json" beforeDir="false" afterPath="$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recommendSong/recommendSong.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recommendSong/recommendSong.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/song/song.js" beforeDir="false" afterPath="$PROJECT_DIR$/songs/pages/song/song.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/song/song.json" beforeDir="false" afterPath="$PROJECT_DIR$/songs/pages/song/song.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/song/song.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/songs/pages/song/song.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/song/song.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/songs/pages/song/song.wxss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,36 +41,36 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="jpg" value="4" />
-          <entry key="js" value="37" />
-          <entry key="json" value="16" />
+          <entry key="js" value="40" />
+          <entry key="json" value="17" />
           <entry key="png" value="5" />
-          <entry key="wxml" value="22" />
-          <entry key="wxss" value="15" />
+          <entry key="wxml" value="23" />
+          <entry key="wxss" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="16" />
-          <entry key="HTML" value="22" />
+          <entry key="CSS" value="17" />
+          <entry key="HTML" value="23" />
           <entry key="Image" value="9" />
-          <entry key="JSON" value="16" />
-          <entry key="JavaScript" value="37" />
+          <entry key="JSON" value="17" />
+          <entry key="JavaScript" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="8437" />
-          <entry key="json" value="72" />
-          <entry key="wxml" value="3726" />
+          <entry key="js" value="8515" />
+          <entry key="json" value="343" />
+          <entry key="wxml" value="3753" />
           <entry key="wxss" value="4815" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="4815" />
-          <entry key="HTML" value="3726" />
-          <entry key="JSON" value="72" />
-          <entry key="JavaScript" value="8437" />
+          <entry key="HTML" value="3753" />
+          <entry key="JSON" value="343" />
+          <entry key="JavaScript" value="8515" />
         </counts>
       </usages-collector>
     </session>
@@ -73,43 +78,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/song/song.wxml">
+        <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="249">
+              <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/index/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
               <folding>
-                <element signature="n#style#0;n#view#0;n#view#0;n#view#2;n#view#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="e#276#1159#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/song/song.wxss">
+        <entry file="file://$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="142" column="16" lean-forward="true" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/recommendSong/recommendSong.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+            <state relative-caret-position="66">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
               <folding>
-                <element signature="e#40#70#0" expanded="true" />
+                <element signature="e#314#1719#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/song/song.js">
+        <entry file="file://$PROJECT_DIR$/songs/pages/song/song.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#22#52#0" expanded="true" />
               </folding>
@@ -134,8 +157,6 @@
         <option value="$PROJECT_DIR$/components/NavHeader/NavHeader.wxml" />
         <option value="$PROJECT_DIR$/components/NavHeader/NavHeader.js" />
         <option value="$PROJECT_DIR$/pages/index/index.wxss" />
-        <option value="$PROJECT_DIR$/pages/index/index.wxml" />
-        <option value="$PROJECT_DIR$/pages/index/index.js" />
         <option value="$PROJECT_DIR$/pages/personal/personal.wxss" />
         <option value="$PROJECT_DIR$/pages/login/login.wxss" />
         <option value="$PROJECT_DIR$/pages/login/login.wxml" />
@@ -148,7 +169,6 @@
         <option value="$PROJECT_DIR$/pages/recommendSong/recommendSong.json" />
         <option value="$PROJECT_DIR$/utils/request.js" />
         <option value="$PROJECT_DIR$/pages/recommendSong/recommendSong.wxss" />
-        <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/utils/config.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/pages/recommendSong/recommendSong.wxml" />
@@ -156,6 +176,11 @@
         <option value="$PROJECT_DIR$/pages/song/song.wxss" />
         <option value="$PROJECT_DIR$/pages/song/song.wxml" />
         <option value="$PROJECT_DIR$/pages/song/song.js" />
+        <option value="$PROJECT_DIR$/pages/index/index.wxml" />
+        <option value="$PROJECT_DIR$/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.js" />
+        <option value="$PROJECT_DIR$/songs/pages/song/song.js" />
+        <option value="$PROJECT_DIR$/app.json" />
       </list>
     </option>
   </component>
@@ -197,7 +222,31 @@
             <path>
               <item name="guigu_yinyue" type="b2602c69:ProjectViewProjectNode" />
               <item name="guigu_yinyue" type="462c0819:PsiDirectoryNode" />
-              <item name="miniprogram_npm" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guigu_yinyue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guigu_yinyue" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guigu_yinyue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guigu_yinyue" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guigu_yinyue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guigu_yinyue" type="462c0819:PsiDirectoryNode" />
+              <item name="songs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guigu_yinyue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guigu_yinyue" type="462c0819:PsiDirectoryNode" />
+              <item name="songs" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -214,6 +263,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\13852\Desktop\0919学习资料\code\guigu_yinyue\songs\pages" />
+      <recent name="C:\Users\13852\Desktop\0919学习资料\code\guigu_yinyue\songs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\13852\Desktop\0919学习资料\code\guigu_yinyue\pages\login" />
       <recent name="C:\Users\13852\Desktop\0919学习资料\code\guigu_yinyue\static\iconfont" />
@@ -233,7 +286,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="song.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="song.js" working-dir="$PROJECT_DIR$/pages/song">
+    <configuration name="song.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/songs/pages/song/song.js" working-dir="$PROJECT_DIR$/songs/pages/song">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -256,18 +309,18 @@
       <workItem from="1585008125139" duration="20010000" />
       <workItem from="1585094702506" duration="24119000" />
       <workItem from="1585221033410" duration="324000" />
-      <workItem from="1585266668519" duration="15852000" />
+      <workItem from="1585266668519" duration="19254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79089000" />
+    <option name="totallyTimeSpent" value="82491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14955357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22991072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -310,6 +363,18 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/index/index.js</url>
+          <line>36</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/images/nvsheng.jpg">
@@ -354,20 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -445,7 +496,7 @@
     <entry file="file://$PROJECT_DIR$/static/images/recommendSong/recommendSong.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/recommendSong/recommendSong.json">
+    <entry file="file://$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
@@ -459,7 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/recommendSong/recommendSong.wxss">
+    <entry file="file://$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
@@ -471,13 +522,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/images/song/needle.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/config.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -500,14 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/recommendSong/recommendSong.wxml">
+    <entry file="file://$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
@@ -521,16 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/recommendSong/recommendSong.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-          <folding>
-            <element signature="e#40#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -538,30 +565,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/song/song.wxss">
+    <entry file="file://$PROJECT_DIR$/songs/pages/song/song.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="142" column="16" lean-forward="true" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/song/song.js">
+    <entry file="file://$PROJECT_DIR$/songs/pages/song/song.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="259">
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#view#0;n#view#0;n#view#2;n#view#0;n#view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding>
+            <element signature="e#276#1159#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/songs/pages/recommendSong/recommendSong.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <element signature="e#314#1719#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/songs/pages/song/song.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#22#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/song/song.wxml">
+    <entry file="file://$PROJECT_DIR$/app.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#view#0;n#view#0;n#view#2;n#view#0;n#view#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
         </state>
       </provider>
     </entry>
