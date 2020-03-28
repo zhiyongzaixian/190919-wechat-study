@@ -1,1 +1,1 @@
-<view></view>
+<view class="categoryContainers"><input class="search" type="text" value="" placeholder="请输入搜索内容" placeholder-class="placeholder"/><view class="contentContainer"><scroll-view class="leftContainer" scroll-y="true"><block wx:for="{{leftList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="navItem">{{''+item.name+''}}</view></block></scroll-view><scroll-view class="rightContainer">右侧内容区</scroll-view></view></view>

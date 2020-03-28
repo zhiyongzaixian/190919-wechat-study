@@ -1,0 +1,8 @@
+{
+	"name": "wangyi_server",
+	"version": "1.0.0",
+	"dependencies": {
+		"koa": "^2.11.0",
+		"koa-router": "^8.0.8"
+	}
+}
