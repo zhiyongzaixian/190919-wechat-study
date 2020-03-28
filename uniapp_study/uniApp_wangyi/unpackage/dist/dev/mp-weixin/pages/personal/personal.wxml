@@ -1,1 +1,1 @@
-<view></view>
+<view><text>个人中心</text><button type="primary" data-event-opts="{{[['tap',[['getOpenId',['$event']]]]]}}" bindtap="__e">获取用户唯一标识</button></view>
